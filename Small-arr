@@ -1,0 +1,6 @@
+function findSmallestElement(arr) {
+    return Math.min(...arr);
+}
+const numbers = [5, 3, 8, 1, 2];
+const smallest = findSmallestElement(numbers);
+console.log(smallest);
