@@ -1,0 +1,5 @@
+const array = [10, 20, 5, 40, 15];
+
+const minNumber = Math.min(...array);
+
+console.log(minNumber); 
