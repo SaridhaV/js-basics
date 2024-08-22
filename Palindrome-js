@@ -1,0 +1,15 @@
+function fibonacci(n) {
+    
+    let fibSequence = [0, 1];
+
+   
+    for (let i = 2; i < n; i++) {
+        fibSequence[i] = fibSequence[i - 1] + fibSequence[i - 2];
+    }
+
+    return fibSequence;
+}
+
+let n = 10;
+let fibSeq = fibonacci(n);
+console.log(`Fibonacci sequence up to ${n} terms: ${fibSeq.join(', ')}`);
