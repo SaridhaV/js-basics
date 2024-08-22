@@ -1,15 +1,19 @@
-function fibonacci(n) {
+function isPalindrome(str) {
     
-    let fibSequence = [0, 1];
+    str = str.toLowerCase().replace(/[^a-z0-9]/g, '');
 
-   
-    for (let i = 2; i < n; i++) {
-        fibSequence[i] = fibSequence[i - 1] + fibSequence[i - 2];
-    }
+    
+    let reversedStr = str.split('').reverse().join('');
 
-    return fibSequence;
+    
+    return str === reversedStr;
 }
 
-let n = 10;
-let fibSeq = fibonacci(n);
-console.log(`Fibonacci sequence up to ${n} terms: ${fibSeq.join(', ')}`);
+
+let inputString = "A man, a plan, a canal: Panama";
+if (isPalindrome(inputString)) {
+    console.log("The string is a palindrome.");
+} else {
+    console.log("The string is not a palindrome.");
+}
+
