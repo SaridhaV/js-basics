@@ -1,0 +1,10 @@
+function countWords(str) {
+    
+    let words = str.trim().split(/\s+/);
+    return words.length;
+}
+
+
+let sentence = "This is an example sentence.";
+let wordCount = countWords(sentence);
+console.log('Number of words:', wordCount);
