@@ -1,0 +1,13 @@
+function findFirstEven(arr) {
+    return arr.find(num => num % 2 === 0);
+}
+
+
+let numbers = [7, 3, 9, 8, 5, 10];
+let firstEven = findFirstEven(numbers);
+
+if (firstEven !== undefined) {
+    console.log(`The first even number is: ${firstEven}`);
+} else {
+    console.log("There is no even number in the array.");
+}
